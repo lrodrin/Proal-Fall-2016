@@ -9,11 +9,15 @@ if s >= 60:
 if m >= 60:
     m = 0
     h += 1
-if h >= 24: h = 0
+if h >= 24:
+    h = 0
 
-if h < 10: print("0", end="")
+if h < 10:
+    print("0", end="")
 print("%d:" % h, end="")
-if m < 10: print("0", end="")
+if m < 10:
+    print("0", end="")
 print("%d:" % m, end="")
-if s < 10: print("0", end="")
+if s < 10:
+    print("0", end="")
 print(s)
