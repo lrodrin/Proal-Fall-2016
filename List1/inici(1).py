@@ -22,9 +22,7 @@ def digit_count(n):
 # def leading_hand(h, m):
 # update_arrival(h, m, d):
 
-
-if __name__ == "__main__":
-    welcome("King Kong")
-    print(max_min(-3, 5))
-    print(integer_division(14, 3))
-    print(digit_count(6543))
+welcome("King Kong")
+print(max_min(-3, 5))
+print(integer_division(14, 3))
+print(digit_count(6543))
