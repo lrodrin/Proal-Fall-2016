@@ -1,16 +1,13 @@
 from jutge import read
 
+x = read(float)
+x_pow = 1
+total = 0
 
-def avalpoli(x, p):
-    aval = 0.
-    pot = 1.
-    for i in range(0, len(p)):
-        aval += p[i] * pot
-        pot = pot * x
-    return aval
+coef = read(float)
+while coef is not None:
+    total += coef * x_pow
+    x_pow *= x
+    coef = read(float)
 
-
-if __name__ == "__main__":
-    x = read(float)
-    poli = read(float, float, float)
-    print("%.4f" % (avalpoli(x, poli)))
+print('{:.4f}'.format(total))
