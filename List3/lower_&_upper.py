@@ -1,11 +1,7 @@
-def lowupp(cadena):
-    cad_aux = ''
-    if cadena[0] == '^':
-        for i in range(1, len(cadena)):
-            cad_aux = cad_aux + cadena[i].upper()
-    elif cadena[0] == '_':
-        for i in range(1, len(cadena)):
-            cad_aux = cad_aux + cadena[i].lower()
+def lowupp(info):
+    if info[0] == "_":
+        print(info.lower().lstrip(info[0]))
+    elif info[0] == "^":
+        print(info.upper().lstrip(info[0]))
     else:
-        cad_aux = cadena
-    return cad_aux
+        print(info)
