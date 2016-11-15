@@ -1,14 +1,10 @@
 def lowupp(info):
-    res = []
     if len(info) != 0:
         if info.startswith("^"):
-            for i in range(1, len(info)):
-                res.append(info[i].upper())
-            return ''.join(res)
+            return info.upper()[1:]
         elif info.startswith("_"):
-            for i in range(1, len(info)):
-                res.append(info[i].lower())
-            return ''.join(res)
+            return info.lower()[1:]
         else:
-            res = info
-            return ''.join(res)
+            return info
+    else:
+        return info
