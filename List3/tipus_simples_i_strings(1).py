@@ -17,23 +17,28 @@ def area_circle(r):
         return "%.2f" % r
 
 
-def slow_pi_aprox(n):
-    res = 0.
-    if n > 0:
-        for k in range(0, n):
-            e = (2 * k) + 1
-            res = (-1) ** (k / e)
-            res *= 4
+# def slow_pi_aprox(n):
+#     res = 0.
+#     if n > 0:
+#         for k in range(0, n):
+#             e = (2 * k) + 1
+#             res = (-1) ** (k / e)
+#             res *= 4
 
+
+def is_univariate_number(n):
+    pass
 
 def is_invariate_word(s):
     b = False
-    for c in range(len(s)-1):
-        if s[c] == s[c+1]:
+    for c in range(len(s) - 1):
+        if s[c] == s[c + 1]:
             b = True
     return b
 
-drawH(5)
-print(area_circle(2.5))
-#print(slow_pi_aprox(50))
-print(is_invariate_word("xxXxXXy"))
+
+#drawH(5)
+#print(area_circle(2.5))
+# print(slow_pi_aprox(50))
+#print(is_univariate_number(22322))
+#print(is_invariate_word("xxXxXXy"))
