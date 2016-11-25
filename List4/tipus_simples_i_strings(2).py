@@ -1,7 +1,7 @@
 def um_count(s):
     cont = 0
-    for i in range(len(s)):
-        if s[i] == 'u' and s[i + 1] == 'm':
+    for word in s.split():
+        if "um" in word:
             cont += 1
     return cont
 
@@ -31,15 +31,11 @@ def suc_word(s):
 
 
 def drawA(n):
-    if n >= 3:
-        for i in range(1, n):
-            if i == 3:
-                print("*" * n)
-            print("*" + ' ' * i + "*")
+    pass
 
 
-print(um_count("Qui invenit amicum invenit thesauruM"))
-print(word_count("Alea iacta          est"))
-print(kth_word("Alea iacta est", 3))
-print(suc_word("qui invenit amiCum invenit thesauruM"))
+print(um_count("Qui iumnvenit amicum invenit thumesauruM"))
+print(word_count("Alea iacta          est            hehe"))
+print(kth_word("Alea iacta est", 2))
+print(suc_word("qui invenit amicum iNvenit thesauruM"))
 drawA(5)
