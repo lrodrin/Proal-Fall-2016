@@ -1,12 +1,14 @@
 from jutge import read
 
 n = read(int)
-k = n
-while k > 0:
+while n > 0:
     res = []
     word = read(str)
+    if word == "hello":
+        word = "bye"
+    elif word == "bye":
+        word = "hello"
     for i in range(len(word)):
         res.append(word[i])
     print(''.join(reversed(res)))
-    k -= 1
-
+    n -= 1
